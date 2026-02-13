@@ -16,4 +16,4 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env")
 
 settings = Settings()
-engine = create_engine(settings.database_url, echo=true) # desativar echo para nao printar consultas
+engine = create_engine(settings.database_url, echo=True) # desativar echo para nao printar consultas
