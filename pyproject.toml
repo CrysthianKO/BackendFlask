@@ -5,8 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "bcrypt>=5.0.0",
+    "email-validator>=2.3.0",
     "flask>=3.1.2",
     "psycopg>=3.3.2",
     "pydantic-settings>=2.12.0",
     "sqlmodel>=0.0.33",
+]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.3.0",
 ]
